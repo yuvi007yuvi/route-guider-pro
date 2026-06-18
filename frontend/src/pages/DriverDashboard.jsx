@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Card, Navbar, Nav, Button, Badge } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { MdLogout, MdNavigation, MdCheckCircle, MdSchedule, MdDirectionsCar } from 'react-icons/md';
-import logo from '../assets/logo.png'; // Make sure this path matches where logo.png is
+import { MdLogout, MdNavigation, MdCheckCircle, MdSchedule, MdDirectionsCar, MdMap } from 'react-icons/md';
 
 const DriverDashboard = () => {
     const navigate = useNavigate();
@@ -62,7 +61,7 @@ const DriverDashboard = () => {
             <Navbar className="glass-card mx-3 mt-3 rounded-pill px-4 shadow-sm" expand="lg">
                 <Container fluid>
                     <Navbar.Brand className="d-flex align-items-center fw-bold" style={{ color: 'var(--primary-color)' }}>
-                        <img src={logo} alt="Nagar Nigam Logo" height="40" className="me-3" />
+                        <MdMap size={28} className="me-2 text-success" />
                         <span className="d-none d-sm-inline">Route Guider Pro</span>
                     </Navbar.Brand>
                     

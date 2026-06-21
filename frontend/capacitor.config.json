@@ -1,5 +1,9 @@
 {
   "appId": "com.nagarnigam.routeguiderpro",
   "appName": "Route Guider Pro",
-  "webDir": "dist"
+  "webDir": "dist",
+  "server": {
+    "url": "https://route-guider-pro.vercel.app",
+    "cleartext": true
+  }
 }
